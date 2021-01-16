@@ -94,7 +94,6 @@ const addClickListenerToCheckbox = (checkbox) => {
     checkbox.addEventListener(("click"), (event) => {
         toDoList.removeItemFromList(checkbox.id);
         updatePersistentData(toDoList.getList());
-        refreshThePage();
         const removedText = getLabelText(checkbox.id);
         updateScreenReaderConfirmation(removedText, "removed from list");
         setTimeout(() => {
