@@ -89,7 +89,7 @@ const buildListItem = (item) => {
     const container = document.getElementById("listItems");
     container.appendChild(div);
 };
-
+//TODO: abgehakte Elemente bleiben in der Liste und werden nicht entfernt, fehlt ggf. ein refresh?
 const addClickListenerToCheckbox = (checkbox) => {
     checkbox.addEventListener(("click"), (event) => {
         toDoList.removeItemFromList(checkbox.id);
